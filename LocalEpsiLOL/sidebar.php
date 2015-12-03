@@ -46,25 +46,12 @@
         </p>
       </div>
     </div>
-
-    <?php
-      if ($_SERVER["PHP_SELF"] == "/LocalEpsiLOL/index.php")
-      {
-        $redirection = "/LocalEpsiLOL/summoner_summary.php";
-      }
-      else
-      {
-        $redirection = $_SERVER["PHP_SELF"];
-      }
-
-
-    ?>
     <!-- search form -->
     <div class="sidebar-form">
-      <form class="input-group" method="GET" action="<?php echo $redirection ?>">
+      <form class="input-group" method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <input name="summonerName" id="userName" type="text" class="form-control" value="splatatozor">
         <span class="input-group-btn">
-          <button type="submit" class="btn btn-flat"><i class="fa fa-search"></i></input>
+          <button type="submit" class="btn btn-flat" ><i class="fa fa-search"></i></input>
           </span>
         </form>
       </div>
@@ -97,6 +84,8 @@
               <?php
             }
             ?>
+            
+            <li><a href="recent_games.php"><i class="fa fa-circle-o"></i> Recent games</a></li>
             <li><a href="summoner_champion.php"><i class="fa fa-circle-o"></i> Champions </a></li>
           </ul>
         </section>

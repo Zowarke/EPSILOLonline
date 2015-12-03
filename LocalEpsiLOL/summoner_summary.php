@@ -13,21 +13,22 @@
 
      <div class="box ">
       <div class="box-body box-profile">
+
         <div class="col-xs-12">
           <div class="box box-solid">
             <div class="box-body">
               <div class="row">
                <div class="col-xs-6 col-md-4 text-center">
-                <div style="padding-top:50px;">
+                <div>
                   <div class="img-responsive"  id="sIcon"></div>
                   <h3 class="profile-username text-center" id="sName"></h3>
                   <p class="text-muted text-center" id="sLevel"></p>
                 </div>
               </div><!-- ./col -->
-              <div class="col-xs-6 col-md-4 text-center border-right border-left">
+              <div class="col-xs-6 col-md-4 text-center">
                 <div id="sRankedSolo"></div>
               </div><!-- ./col -->
-              <div class="col-xs-6 col-md-4 text-center border-right">
+              <div class="col-xs-6 col-md-4 text-center">
                 <div id="sRankedThree"></div>
               </div><!-- ./col -->
               <div class="col-xs-6 col-md-4 text-center">
@@ -79,7 +80,6 @@
   <div class="row" id="recentGame">
 
   </div>
-
 
       <?php // Checking summoner name entry
 
@@ -153,14 +153,13 @@
                 document.getElementById('sIcon').innerHTML = "<img width='50%' src='http://avatar.leagueoflegends.com/euw/" + SUMMONER_NAME + ".png' class='img-thumbnail'>";
                 document.getElementById("sLevel").innerHTML = "Level " + summonerLevel;
 
-                if (summonerLevel == 30)
+                if (summonerLevel = 30)
                 {
                   getVersion();
                   getSummonerRankedStats(sumID);
+                  getRecentGameInfo(sumID);
 
                 };
-
-                  getRecentGameInfo(sumID);
               },
 
               error: function (XMLHttpRequest, textStatus, errorThrown) 
@@ -168,8 +167,8 @@
                 alert("error getting Summoner data!");
               }
             });
-}
-}
+          }
+        }
 
 function getSummonerRankedStats(sumID)
 {
@@ -321,9 +320,6 @@ error: function (XMLHttpRequest, textStatus, errorThrown)
 
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
-     <?php 
-        include("footer.php");
-      ?>
 
     <script>
       function tierToNumber(tier)
