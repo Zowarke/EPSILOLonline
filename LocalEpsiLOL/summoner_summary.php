@@ -2,6 +2,7 @@
   include("header.php");
   include("function.php");
   include("sidebar.php");
+  include("scriptJs.php");
   ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -322,7 +323,6 @@ error: function (XMLHttpRequest, textStatus, errorThrown)
     </div><!-- ./wrapper -->
      <?php 
         include("footer.php");
-        include("scriptJs.php");
       ?>
 
     <script>
