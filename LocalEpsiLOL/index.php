@@ -2,7 +2,6 @@
 include('header.php');
 include('sidebar.php');
 ?>
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
   <!-- Content Header (Page header) -->
@@ -11,7 +10,7 @@ include('sidebar.php');
     <div class="row ">
       <div class="col-md-6 ">
         <!-- AREA CHART -->
-        <div class="box  box-cote">
+        <div class="box box-primary box-cote">
           <div class="box-header with-border">
             <h3 class="box-title">League Of Legends</h3>
           </div>
@@ -23,7 +22,7 @@ include('sidebar.php');
         </div><!-- /.box -->
       </div><!-- /.col (RIGHT) -->
       <div class="col-md-6">
-        <div class="box  box-cote">
+        <div class="box box-primary box-cote">
           <div class="box-header with-border">
             <h3 class="box-title">Riot Games</h3>
           </div>
@@ -40,8 +39,9 @@ include('sidebar.php');
 </div><!-- /.content-wrapper -->
 <div class="control-sidebar-bg"></div>
 </div><!-- ./wrapper -->
-
-
+<?php
+  include("footer.php");
+?>
 
 <!-- jQuery 2.1.4 -->
 <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>

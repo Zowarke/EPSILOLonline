@@ -140,7 +140,7 @@ function getChampionNameByChampionIdAndDisplayTable(championID, nbGame, nbWon, n
 			gameType="Normal"
 			break;
 			case "BOT":
-			gameType="BOT"
+			gameType="Bot"
 			break;
 			case "RANKED_PREMADE_3x3":
 			gameType="Ranked Premade 3x3"
@@ -155,7 +155,7 @@ function getChampionNameByChampionIdAndDisplayTable(championID, nbGame, nbWon, n
 			gameType="Normal 3x3"
 			break;
 			case "BOT_3x3":
-			gameType="BOT 3x3"
+			gameType="Bot 3x3"
 			break;
 			case "CAP_5x5":
 			gameType="Team Builder 5x5"
@@ -179,10 +179,10 @@ function getChampionNameByChampionIdAndDisplayTable(championID, nbGame, nbWon, n
 			gameType="URF"
 			break;
 			case "URF_BOT":
-			gameType="URF BOT"
+			gameType="URF Bot"
 			break;
 			case "NIGHTMARE_BOT":
-			gameType="Nightmare BOT"
+			gameType="Nightmare Bot"
 			break;
 			case "ASCENSION":
 			gameType="Ascension"
@@ -191,7 +191,7 @@ function getChampionNameByChampionIdAndDisplayTable(championID, nbGame, nbWon, n
 			gameType="Hexakill"
 			break;
 			case "KING_PORO":
-			gameType="King Poro"
+			gameType="Poro King"
 			break;
 			case "COUNTER_PICK":
 			gameType="Counter Pick"
