@@ -2,7 +2,7 @@
   include("header.php");
   include("sidebar.php");
   include("function.php");
-  include("scriptJS.php");
+  include("scriptJs.php");
   ?>
 
   <div class="content-wrapper">

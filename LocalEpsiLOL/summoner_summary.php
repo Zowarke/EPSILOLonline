@@ -2,6 +2,7 @@
   include("header.php");
   include("function.php");
   include("sidebar.php");
+  include("scriptJs.php");
   ?>
 
   <!-- Content Wrapper. Contains page content -->
@@ -328,18 +329,12 @@ error: function (XMLHttpRequest, textStatus, errorThrown)
       function tierToNumber(tier)
       {
         if (tier == "CHALLENGER") {return 1}
-          else if (tier == "MASTER") {return 2}
-            else if (tier == "DIAMOND") {return 3}
-              else if (tier == "PLATINUM") {return 4}
-                else if (tier == "GOLD") {return 5}
-                  else if (tier == "SILVER") {return 6}
-                    else if (tier == "BRONZE") {return 7}
-                      else if (tier == "UNRANKED") {return 8};
-                  }
-                </script>
-
-              </body>
-              <?php 
-                include("scriptJs.php");
-              ?>
-              </html>
+        else if (tier == "MASTER") {return 2}
+        else if (tier == "DIAMOND") {return 3}
+        else if (tier == "PLATINUM") {return 4}
+        else if (tier == "GOLD") {return 5}
+        else if (tier == "SILVER") {return 6}
+        else if (tier == "BRONZE") {return 7}
+        else if (tier == "UNRANKED") {return 8};
+    }
+  </script>
