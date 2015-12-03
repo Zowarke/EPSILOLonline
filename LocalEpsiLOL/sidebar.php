@@ -48,9 +48,9 @@
     </div>
 
     <?php
-      if ($_SERVER["PHP_SELF"] == "/scripts/EPSILOLonline/LocalEpsiLOL/index.php")
+      if ($_SERVER["PHP_SELF"] == "/index.php")
       {
-        $redirection = "/scripts/EPSILOLonline/LocalEpsiLOL/summoner_summary.php";
+        $redirection = "/summoner_summary.php";
       }
       else
       {
