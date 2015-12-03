@@ -2,7 +2,6 @@
   include("header.php");
   include("sidebar.php");
   include("function.php");
-  include("scriptJs.php");
   ?>
 
   <div class="content-wrapper">
@@ -86,4 +85,5 @@
       </div>
       <?php 
         include("footer.php");
+        include("scriptJs.php");
       ?>
