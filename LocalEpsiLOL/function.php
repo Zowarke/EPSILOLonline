@@ -8,7 +8,7 @@
 	{
 
 		$.ajax({
-			url: 'https://euw.api.pvp.net/api/lol/euw/v1.3/stats/by-summoner/' + sumID + '/ranked?season=SEASON2015&api_key=' + API_KEY,
+			url: 'https://euw.api.pvp.net/api/lol/euw/v1.3/stats/by-summoner/' + sumID + '/ranked?season=SEASON2016&api_key=' + API_KEY,
 			type: 'GET',
 			dataType: 'json',
 			data: {},
